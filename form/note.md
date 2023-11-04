@@ -55,6 +55,6 @@ React may batch multiple `setState` calls into a single update for performance r
 
 If `App` is the top-level component, a change in its state or props could potentially affect all child components within it. Each child component will also go through the same process of reconciliation to determine if it needs to be updated.
 
-## Lifecycle Methods and Hooks
+### Lifecycle Methods and Hooks
 
 If you are using class components, lifecycle methods (like `shouldComponentUpdate`, `componentDidUpdate`, etc.) are invoked at various stages of this process. If you are using hooks in functional components (like `useEffect`), they are invoked after the DOM has been updated.
